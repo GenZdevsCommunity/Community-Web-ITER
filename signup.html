@@ -33,10 +33,10 @@
           <p class="text-lg font-medium">Register your new account</p>
 
           <div>
-            <label for="regNo" class="text-sm font-medium">Name</label>
+            <label for="accName" class="text-sm font-medium">Name</label>
 
             <div class="relative mt-1">
-              <input type="text" id="regNo" class="w-full p-4 pr-12 text-sm border-0 border-b-2  border-gray-200 rounded-lg shadow-sm"
+              <input type="text" id="accName" class="w-full p-4 pr-12 text-sm border-0 border-b-2  border-gray-200 rounded-lg shadow-sm"
                 placeholder="Enter Name" />
 
               <span class="absolute inset-y-0 inline-flex items-center right-4">
@@ -48,6 +48,11 @@
               </span>
             </div>
           </div>
+
+          <!-- space to show error text  -->
+          <span id="nameError" class="text-error font-semibold text-sm">
+
+          </span>
 
           <div>
             <label for="email" class="text-sm font-medium">Email</label>
@@ -65,6 +70,10 @@
               </span>
             </div>
           </div>
+          <!-- space to show error text  -->
+          <span id="emailError" class="text-error font-semibold text-sm">
+            
+          </span>
 
           <div>
             <label for="password" class="text-sm font-medium">Password</label>
@@ -84,6 +93,10 @@
               </span>
             </div>
           </div>
+          <!-- space to show error text  -->
+          <span id="passwordError" class="text-error font-semibold text-sm">
+
+          </span>
 
           <button type="submit" class="du-btn du-btn-primary w-full">
             Register

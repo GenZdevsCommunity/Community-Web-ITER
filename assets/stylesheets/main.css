@@ -1,3 +1,44 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* style for respective parts */
+
+@layer components {
+
+  input.custom-input {
+    @apply w-full p-4 pr-12 text-sm border-0 border-b-2 border-base-200 bg-base-200 rounded-lg shadow-sm
+  }
+
+}
+
+/*------------------------*/
+/*                        */
+/*   absolute-custom-css  */
+/*                        */
+/*------------------------*/
+
+/* style for dark theme icon */
+
+[data-theme="light"] .themeToggleBtn .dark-theme-icon {
+  opacity: 0;
+
+  --tw-rotate: -45deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+[data-theme="dark"] .themeToggleBtn .dark-theme-icon {
+  opacity: 1;
+}
+
+/* style for light theme icon */
+[data-theme="dark"] .themeToggleBtn .light-theme-icon {
+  opacity: 0;
+
+  --tw-rotate: 45deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+[data-theme="light"] .themeToggleBtn .light-theme-icon {
+  opacity: 1;
+}

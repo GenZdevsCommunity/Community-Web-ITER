@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../assets/stylesheets/output.css">
+  <title>Iter on The Web</title>
+</head>
+
+<body data-theme="light" class="min-h-screen bg-base-300">
+
+  <!-- Navigation -->
+  <nav class="du-navbar flex-col gap-y-2 justify-between
+  sm:flex-row  ">
+    <a class="du-btn du-btn-ghost normal-case text-xl bg-white" href="./index.html">LoGo here</a>
+
+    <div class="hidden sm:block bg-base-100 rounded-md p-2 gap-2">Don’t have an account?
+      <span class="text-primary font-bold">
+        <a href="../signup.html" rel="noopener noreferrer">Sign Up!</a>
+      </span>
+    </div>
+
+  </nav>
+
+  <!-- Main area -->
+  <main>
+
+    <div class="max-w-screen-xl px-4 py-16 mx-auto space-y-1 sm:px-6 lg:px-8">
+      <div class="max-w-lg mx-auto">
+
+        <form action="" method="post" class="p-8 mt-6 mb-0 space-y-4 rounded-lg shadow-2xl 
+      bg-base-100">
+          <p class="text-lg font-medium">Enter Otp</p>
+
+          <!-- Otp input -->
+          <div>
+            <label for="email" class="text-sm font-medium sr-only">Otp</label>
+
+            <div class="relative mt-1">
+              <input type="number" id="otp" class="custom-input" placeholder="Otp" />
+            </div>
+          </div>
+          <!-- space to show error text  -->
+          <span id="otpError" class="text-error font-semibold text-sm">
+          </span>
+
+          <!-- Submit button -->
+          <button type="submit" class="du-btn du-btn-primary w-full">
+            Confirm
+          </button>
+
+
+        </form>
+      </div>
+
+      <div class="max-w-lg mx-auto sm:hidden">
+        <div class="bg-base-100 rounded-md p-2 gap-2">Don’t have an account?
+          <span class="text-primary font-bold">
+            <a href="../signup.html" rel="noopener noreferrer">Sign Up!</a>
+          </span>
+        </div>
+      </div>
+
+    </div>
+
+
+  </main>
+
+
+</body>
+
+</html>

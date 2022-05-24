@@ -1,7 +1,7 @@
 {
   "scripts": {
     "watch": "npx tailwindcss -i ./assets/stylesheets/main.css -o ./dist/assets/stylesheets/output.css --watch",
-    "build": "npx tailwindcss -i ./assets/stylesheets/main.css -o ./dist/assets/stylesheets/output.css --minify"
+    "minify": "npx tailwindcss -i ./assets/stylesheets/main.css -o ./dist/assets/stylesheets/output.css --minify"
   },
   "devDependencies": {
     "@tailwindcss/forms": "^0.5.1",

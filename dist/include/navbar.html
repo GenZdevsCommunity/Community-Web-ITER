@@ -82,7 +82,9 @@
 
 
       <!-- profile button -->
-      <div class="du-dropdown du-dropdown-end">
+      
+      <!-- if user logged in -->
+      <!-- <div class="du-dropdown du-dropdown-end">
         <label tabindex="0" class="du-btn du-btn-ghost du-btn-circle du-avatar">
           <div class="w-10 rounded-full">
             <img src="https://api.lorem.space/image/face?hash=33791" />
@@ -98,7 +100,22 @@
           <li><a>Settings</a></li>
           <li><a>Logout</a></li>
         </ul>
+      </div> -->
+
+      <!-- if user not logged in -->
+      <div class="du-dropdown du-dropdown-end">
+        <label tabindex="0" class="du-btn du-btn-ghost du-btn-circle du-avatar">
+          <div class="w-10 rounded-full">
+            <img src="https://assets.website-files.com/5e51c674258ffe10d286d30a/5e535a30d871312cf4100aed_peep-73.png" />
+          </div>
+        </label>
+        <ul tabindex="0"
+          class="du-menu du-menu-compact du-dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
+          <li><a>Settings</a></li>
+          <li><a>Log in</a></li>
+        </ul>
       </div>
+      
     </div>
   </navbar>
 
